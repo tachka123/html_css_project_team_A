@@ -1,3 +1,149 @@
-header{
-	color: rebeccapurple;
+.header a{
+	text-decoration: none;
 }
+.header {
+  height: 568px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 21px;
+  background: url(../../images/header/img.png);
+  background-size: 100%;
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.75);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 96px;
+  }
+&__navigation{
+	display: flex;
+	justify-content: space-between;
+
+}
+&__nav_select a{
+	color: grey;
+}
+&__nav_select {
+	display: none;
+	font-family: "Open Sans Bold";
+	&:hover a{
+		color: black;
+	}
+}
+  &__logo {
+    font-family: 'Raleway SemiBold';
+    font-size: 22px;
+    color: $maincolor-blue;
+  }
+
+  &__title {
+    font-size: 25px;
+    color: white;
+    font-family: 'Raleway Bold';
+    margin-bottom: 21px;
+  }
+
+  &__aftertitle {
+    font-size: $titlesize;
+    font-family: 'Open Sans SemiBold';
+    font-weight: 600;
+    color: white;
+	margin-bottom: 34px;
+	width: 188px;
+  }
+
+  &__options {
+
+
+	flex-direction: column;
+	height: 85px;
+	display: flex;
+	flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 35px;
+
+  }
+
+  &__option {
+display: flex;
+
+  }
+
+  &__span {
+    font-family: 'Open Sans SemiBold';
+	font-weight: 600;
+	font-size: 12px;
+	color: white;
+  }
+  &__strelka{
+	  margin-right: 16px;
+  }
+  &__button_space{
+text-align: center;
+  }
+  &__button_inner{
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-left: 22px;
+	  margin-right: 39px;
+  }
+  &__button{
+
+	  width: 211px;
+	  height: 48px;
+	  background-color: $maincolor-blue;
+	  border: solid $maincolor-blue;
+	  border-radius: 4%
+  }
+  &__button_line{
+	  font-family: "Open Sans SemiBold";
+	  font-weight: 600;
+	  color: white;
+  }
+  &__iphones{
+	  display: none;
+  }
+}
+@media (min-width: 768px) {
+	.hidden{
+		display: none;
+	}
+.header{
+	&__nav_select{
+		display: block;
+	}
+	&__navigation{
+		width: 447px;
+	}
+	&__iphones{
+		display: block;
+		position: absolute;
+	top: 00px;
+		right: 33px;
+	}
+	&__button_space{
+		text-align: left;
+		  }
+		  &__aftertitle{
+			  width: 430px;
+		  }
+		  &__nav{
+
+		  }
+}
+  }
+  @media (min-width: 1200px){
+    .header{
+      background: url(../../images/header/img2.png);
+      background-size: 100%;
+    }
+  }
