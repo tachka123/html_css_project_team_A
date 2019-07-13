@@ -1,0 +1,173 @@
+.section_3 {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.our-team {
+  margin: 58px 0;
+  padding: 0 10px;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Raleway Bold';
+  color: rgb(26, 183, 152);
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px;
+}
+.section-title::before {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  content: '';
+  background-color: rgb(26, 183, 152);
+  width: 60px;
+  height: 1px;
+}
+.section-title::after {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  content: '';
+  background-color: rgb(26, 183, 152);
+  width: 60px;
+  height: 1px;
+}
+.team-title {
+  font-size: 16px;
+  font-family: 'Open Sans Bold';
+  color: rgba(6, 32, 51, 0.8);
+  font-weight: bold;
+}
+.cards-list {
+  list-style: none;
+  text-align: center;
+}
+.card:last-child{
+    margin-bottom: 0;
+}
+.card {
+  width: 270px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.card-name {
+  font-size: 18px;
+  font-family: 'Open Sans SemiBold';
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+}
+.card-post {
+  font-size: 13px;
+  font-family: 'Open Sans Regular';
+  color: rgba(6, 32, 51, 0.561);
+  padding-top: 10px;
+}
+
+.overlay {
+  background-color: rgba(14, 180, 147, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay-name {
+  padding: 22px 15px;
+  font-size: 16px;
+  font-family: 'Open Sans Bold';
+  color: rgb(255, 255, 255);
+}
+.overlay-title {
+  padding: 0 15px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans Regular';
+}
+.overlay-list {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.overlay-icon {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px){
+    .section_3 {
+        width: 768px;
+    }
+    .cards-list {
+        margin: 0 auto;
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team-title {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .card:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .section-title::before{
+        left: 210px;
+        top: 15px;
+    }
+    .section-title::after{
+        right: 210px;
+        top: 15px;
+    }
+    .team-title {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1200px){
+    .section_3{
+        width: auto;
+        margin: 0 auto;
+    }
+    .cards-list{
+        width: auto;
+    }
+    .card {
+        margin-bottom: 0;
+    }
+    .team-title {
+        width: auto;
+    }
+    .section-title::before{
+        left: 350px;
+    }
+    .section-title::after{
+        right: 350px;
+    }
+    .our-team {
+        padding: 0 50px;   
+    }
+}
