@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     box-sizing: inherit;
 }
@@ -17,7 +17,7 @@
 }
 
 .page-footer {
-    background-image: url(../../images/footer/img.png);
+    background-image: url(../images/footer/img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,7 +43,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        transform: translateX(-124%); 
+        transform: translateX(-124%);
     }
 
     &::after {
@@ -59,7 +59,7 @@
     }
 }
 
- 
+
 /* FORM */
 .form-container {
     width: 290px;
@@ -140,14 +140,14 @@ textarea {
     width: 171px;
     height: 51px;
     padding: 8px 15px;
-    cursor: pointer;   
+    cursor: pointer;
     font-size: 22px;
     font-family: 'Open Sans Regular', sans-serif;
     color: rgb( 255, 255, 255 );
     font-weight: 400;
     line-height: 1.2;
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
     border-radius: 3px;
     background-color: $maincolor-blue;
     border-width: 0;
@@ -286,35 +286,35 @@ figcaption {
         font-size: 24px;
 
         &::after {
-            transform: translateX(275%);  
+            transform: translateX(275%);
         }
     }
 
     .form-container {
         width: 570px;
     }
-    
+
     .form {
         max-width: 570px;
         margin: 0 auto;
         padding-top: 75px;
         font-size: 30px;
     }
-    
+
     .label-list {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .input {
         margin-bottom: 30px;
     }
-    
+
     .area-message {
         margin-bottom: 30px;
     }
-    
+
     textarea {
         width: 550px;
         height: 160px;
@@ -330,7 +330,7 @@ figcaption {
     .contacts {
         margin-top: 28px;
     }
-      
+
     .figcaption__text {
         width: 570px;
     }
