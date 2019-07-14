@@ -1,0 +1,132 @@
+/*mob*/
+
+.section2 {
+  background-repeat: no-repeat;
+  background-color: rgb(49, 212, 231);
+  padding-bottom: 3.75rem;
+  padding-top: 3.5625rem;
+}
+
+.section2__title {
+  font-size: 1.125rem;
+  font-family: "Raleway Bold", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.375rem;
+}
+
+.section2__title-description {
+  color: rgb(255, 252, 255);
+  font-family: "Raleway Regular", sans-serif;
+  text-align: center;
+  margin-bottom: 1.5625rem;
+  margin-left: 2.1875rem;
+  margin-right: 2.1875rem;
+  line-height: 1.875rem;
+}
+
+.section2__video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.svg__icons {
+  width: 2.125rem;
+  height: 2.125rem;
+}
+
+.section2__icons {
+  width: 4.1875rem;
+  height: 4.1875rem;
+  background-color: rgb(0, 152, 205);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2__icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 9.75rem;
+  margin: 0 auto;
+  margin-bottom: 2.1875rem;
+}
+
+.section2__video {
+  width: 17.8125rem;
+  height: 13.5625rem;
+}
+
+
+/*tablet*/
+
+
+@media (min-width: 768px) {
+  .section2 {
+    padding-bottom: 6.6875rem;
+    padding-top: 6.5625rem;
+  }
+
+  .section2__title {
+    font-size: 1.75rem;
+    font-family: "Raleway Regular", sans-serif;
+  }
+
+  .section2__title-description {
+    margin-left: 7.0625rem;
+    margin-right: 7.0625rem;
+  }
+
+  .section2__icons-container {
+    margin-bottom: 4.0625rem;
+  }
+
+  .section2__video {
+    width: 31.25rem;
+    height: 19.1875rem;
+  }
+
+}
+
+
+/*desctop*/
+
+
+@media screen and (min-width: 1200px) {
+  .section2 {
+    padding-bottom: 4.1875rem;
+  }
+
+  .desctop__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section2__title-description {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .section2__title {
+    text-align: left;
+  }
+
+  .section2__icons-container {
+    margin: 0;
+  }
+
+  .container__icons-text {
+    width: 33.8125rem;
+  }
+
+  .section2__video {
+    width: 31.25rem;
+    height: 19.1875rem;
+  }
+
+}
