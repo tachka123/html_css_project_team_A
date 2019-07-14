@@ -95,7 +95,16 @@ flex-direction: column;
 			left: 0;
 		}
 	}
-
+	.section1__h2::after{
+		top: 14px ;
+	}
+	.section1__h2::before{
+		top: 14px;
+		left: 22px;
+	}
+	.section1__h2{
+		width: 348px
+	}
 
 	.key{
 		flex-direction: row !important;
@@ -130,15 +139,6 @@ flex-direction: column;
 			margin-top: 70px !important;
 		}
 	}
-	.section1__h2::after{
-		top: 14px ;
-	}
-	.section1__h2::before{
-		top: 14px;
-		left: 22px;
-	}
-	.section1__h2{
-		width: 348px
-	}
+
 
 }

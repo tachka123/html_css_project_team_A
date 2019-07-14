@@ -120,10 +120,14 @@ text-align: center;
 	  display: none;
   }
 }
+.header__title{
+  text-align: left;
+}
 @media (min-width: 768px) {
 	.hidden{
 		display: none;
-	}
+  }
+  .section1__h2{font-size: 28px;}
 .header{
 	&__nav_select{
 		display: block;
@@ -141,16 +145,21 @@ text-align: center;
 		text-align: left;
 		  }
 		  &__aftertitle{
-			  width: 430px;
+        width: 430px;
+
 		  }
 		  &__nav{
 
 		  }
+}
+.header__aftertitle{
+  text-align: left;
 }
   }
   @media (min-width: 1200px){
     .header{
       background: url(../../images/header/img2.png);
       background-size: 100%;
+
     }
   }
